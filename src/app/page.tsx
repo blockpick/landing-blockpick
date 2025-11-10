@@ -3,6 +3,15 @@
 import Script from 'next/script';
 import { useEffect } from 'react';
 
+// Declare global window types
+declare global {
+  interface Window {
+    Lenis: any;
+    gsap: any;
+    THREE: any;
+  }
+}
+
 export default function Home() {
   useEffect(() => {
     // Load scripts after external libraries are ready
@@ -21,7 +30,7 @@ export default function Home() {
           document.body.appendChild(script);
 
           // Load other scripts
-          ['easter.min.js', 'favicon.min.js', 'color.min.js', 'adnori-animations.js'].forEach(file => {
+          ['easter.min.js', 'favicon.min.js', 'color.min.js', 'adnori-animations.js', 'adnori-loader.js'].forEach(file => {
             const s = document.createElement('script');
             s.src = `/js/${file}`;
             s.async = true;
@@ -129,15 +138,15 @@ export default function Home() {
             <span className="letter">Transform</span>{' '}
             <span className="letter">advertising</span>{' '}
             <span className="letter">into</span>{' '}
-            <span className="letter underlined easterEgg pm easter-pointer" emoji="🎮">gameplay,</span>{' '}
+            <span className="letter underlined easterEgg pm easter-pointer" data-emoji="🎮">gameplay,</span>{' '}
             <span className="letter">marketing</span>{' '}
             <span className="letter">into</span>{' '}
-            <span className="letter underlined easterEgg inno easter-pointer" emoji="✨">joy</span>{' '}
+            <span className="letter underlined easterEgg inno easter-pointer" data-emoji="✨">joy</span>{' '}
             <span className="letter">with</span>{' '}
             <span className="letter">our</span>{' '}
-            <span className="letter underlined easterEgg tech easter-pointer" emoji="🚀">innovative</span>{' '}
+            <span className="letter underlined easterEgg tech easter-pointer" data-emoji="🚀">innovative</span>{' '}
             <span className="letter">software</span>{' '}
-            <span className="letter underlined easterEgg design easter-pointer" emoji="💡">platform</span>
+            <span className="letter underlined easterEgg design easter-pointer" data-emoji="💡">platform</span>
           </h5>
         </div>
 
@@ -199,9 +208,7 @@ export default function Home() {
         </div>
         <div className="grid-container work">
           <h3>
-            <span className="animate-text-hc">
-              <span className="animated-word">#1</span> <span className="animated-word">Interactive</span> <span className="animated-word">Advertising</span> <span className="animated-word">Platform</span>
-            </span>
+            #1 Interactive Advertising Platform
           </h3>
           <p className="animate-text-hc">
             <span className="animated-word">Gamified</span> <span className="animated-word">ad</span> <span className="animated-word">solution</span> <span className="animated-word">that</span> <span className="animated-word">boosts</span> <span className="animated-word">click-through</span> <span className="animated-word">rates</span> <span className="animated-word">by</span> <span className="animated-word">10x</span>
@@ -226,9 +233,7 @@ export default function Home() {
         </div>
         <div className="grid-container work">
           <h3>
-            <span className="animate-text-hc">
-              <span className="animated-word">#2</span> <span className="animated-word">User</span> <span className="animated-word">Engagement</span> <span className="animated-word">Platform</span>
-            </span>
+            #2 User Engagement Platform
           </h3>
           <p className="animate-text-hc">
             <span className="animated-word">Enjoyable</span> <span className="animated-word">experience</span> <span className="animated-word">where</span> <span className="animated-word">users</span> <span className="animated-word">watch</span> <span className="animated-word">ads</span> <span className="animated-word">and</span> <span className="animated-word">earn</span> <span className="animated-word">rewards</span>
@@ -253,9 +258,7 @@ export default function Home() {
         </div>
         <div className="grid-container work">
           <h3>
-            <span className="animate-text-hc">
-              <span className="animated-word">#3</span> <span className="animated-word">Creator</span> <span className="animated-word">Tools</span>
-            </span>
+            #3 Creator Tools
           </h3>
           <p className="animate-text-hc">
             <span className="animated-word">Create</span> <span className="animated-word">interactive</span> <span className="animated-word">ads</span> <span className="animated-word">easily,</span> <span className="animated-word">for</span> <span className="animated-word">everyone</span>
