@@ -61,7 +61,7 @@ body::before {
 /* 큰 텍스트 크기 조정 - 반응형 */
 @media screen and (min-width: 769px) {
     #lastname {
-        font-size: clamp(4rem, 10vw, 8rem) !important;
+        font-size: clamp(4rem, 10vw, 6rem) !important;
     }
 }
 
@@ -143,14 +143,27 @@ h2 {
     border-radius: 4px;
 }
 
-/* h3 타이틀 애니메이션 비활성화 */
-#about > .work > h3 {
+/* h3 타이틀 애니메이션 완전 비활성화 */
+#about > .work > h3,
+#about .work > h3 {
     opacity: 1 !important;
     visibility: visible !important;
     transform: none !important;
+    animation: none !important;
 }
 
-#about > .work > h3 * {
+#about > .work > h3 *,
+#about .work > h3 * {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    animation: none !important;
+}
+
+/* Hide any special characters that might appear */
+#about .work > h3 .animated-word,
+#about .work > h3 .animated-letter {
+    display: inline !important;
     opacity: 1 !important;
     visibility: visible !important;
     transform: none !important;

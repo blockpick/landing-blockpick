@@ -257,7 +257,7 @@ a.hovered > span::before, #email.hovered::before {
 
 /* hero section */
 .alan {
-    grid-column: 9/-1;
+    grid-column: 7/-1;
     font-size: 9rem;
 }
 

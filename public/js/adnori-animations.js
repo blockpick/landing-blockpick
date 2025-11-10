@@ -428,37 +428,6 @@ function createClickExplosion(x, y) {
   }
 }
 
-// 텍스트에 글리치 효과
-function glitchEffect(element) {
-  const original = element.textContent;
-  const chars = '!@#$%^&*()_+-=[]{}|;:,.<>?';
-  let iterations = 0;
-
-  const interval = setInterval(() => {
-    element.textContent = original
-      .split('')
-      .map((char, index) => {
-        if (index < iterations) {
-          return original[index];
-        }
-        return chars[Math.floor(Math.random() * chars.length)];
-      })
-      .join('');
-
-    if (iterations >= original.length) {
-      clearInterval(interval);
-    }
-
-    iterations += 1 / 3;
-  }, 30);
-}
-
-// h3 요소에 호버 시 글리치 효과
-gsap.utils.toArray("#about .work h3").forEach((h3) => {
-  h3.addEventListener('mouseenter', () => {
-    glitchEffect(h3);
-  });
-});
 
 // 페이지 로드 후 초기화
 if (document.readyState === 'loading') {
