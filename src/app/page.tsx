@@ -21,7 +21,7 @@ export default function Home() {
           document.body.appendChild(script);
 
           // Load other scripts
-          ['easter.min.js', 'favicon.min.js', 'color.min.js'].forEach(file => {
+          ['easter.min.js', 'favicon.min.js', 'color.min.js', 'adnori-animations.js'].forEach(file => {
             const s = document.createElement('script');
             s.src = `/js/${file}`;
             s.async = true;
@@ -39,6 +39,9 @@ export default function Home() {
 
   return (
     <>
+      {/* scroll progress bar */}
+      <div id="scroll-progress"></div>
+
       {/* noise effect */}
       <div id="noise"></div>
 
@@ -190,18 +193,21 @@ export default function Home() {
           <p className="animate-text-hc">
             <span className="animated-word">클릭률을</span> <span className="animated-word">10배</span> <span className="animated-word">높이는</span> <span className="animated-word">게임화된</span> <span className="animated-word">광고</span> <span className="animated-word">솔루션</span>
           </p>
+          <p className="animate-text-hc platform-description">
+            <span className="animated-word">사용자가</span> <span className="animated-word">직접</span> <span className="animated-word">참여하는</span> <span className="animated-word">미니게임</span> <span className="animated-word">형태의</span> <span className="animated-word">광고를</span> <span className="animated-word">통해</span> <span className="animated-word">브랜드</span> <span className="animated-word">인게이지먼트를</span> <span className="animated-word">극대화합니다.</span> <span className="animated-word">단순한</span> <span className="animated-word">배너가</span> <span className="animated-word">아닌,</span> <span className="animated-word">몰입형</span> <span className="animated-word">경험을</span> <span className="animated-word">제공하여</span> <span className="animated-word">광고</span> <span className="animated-word">피로도를</span> <span className="animated-word">줄이고</span> <span className="animated-word">전환율을</span> <span className="animated-word">향상시킵니다.</span>
+          </p>
           <ul>
             <li><span className="animate-text-hc">
-              <span className="animated-word">-</span> <span className="animated-word">미니게임</span> <span className="animated-word">기반</span> <span className="animated-word">광고</span>
+              <span className="animated-word">-</span> <span className="animated-word">미니게임</span> <span className="animated-word">기반</span> <span className="animated-word">광고:</span> <span className="animated-word">퍼즐,</span> <span className="animated-word">퀴즈,</span> <span className="animated-word">룰렛</span> <span className="animated-word">등</span> <span className="animated-word">다양한</span> <span className="animated-word">게임</span> <span className="animated-word">템플릿</span>
             </span></li>
             <li><span className="animate-text-hc">
-              <span className="animated-word">-</span> <span className="animated-word">실시간</span> <span className="animated-word">참여</span> <span className="animated-word">분석</span>
+              <span className="animated-word">-</span> <span className="animated-word">실시간</span> <span className="animated-word">참여</span> <span className="animated-word">분석:</span> <span className="animated-word">클릭률,</span> <span className="animated-word">참여</span> <span className="animated-word">시간,</span> <span className="animated-word">전환율</span> <span className="animated-word">데이터</span> <span className="animated-word">실시간</span> <span className="animated-word">추적</span>
             </span></li>
             <li><span className="animate-text-hc">
-              <span className="animated-word">-</span> <span className="animated-word">A/B</span> <span className="animated-word">테스트</span> <span className="animated-word">자동화</span>
+              <span className="animated-word">-</span> <span className="animated-word">A/B</span> <span className="animated-word">테스트</span> <span className="animated-word">자동화:</span> <span className="animated-word">다양한</span> <span className="animated-word">게임</span> <span className="animated-word">형식을</span> <span className="animated-word">자동으로</span> <span className="animated-word">테스트하고</span> <span className="animated-word">최적화</span>
             </span></li>
             <li><span className="animate-text-hc">
-              <span className="animated-word">-</span> <span className="animated-word">ROI</span> <span className="animated-word">대시보드</span>
+              <span className="animated-word">-</span> <span className="animated-word">ROI</span> <span className="animated-word">대시보드:</span> <span className="animated-word">캠페인</span> <span className="animated-word">성과를</span> <span className="animated-word">한눈에</span> <span className="animated-word">확인하는</span> <span className="animated-word">직관적인</span> <span className="animated-word">인터페이스</span>
             </span></li>
           </ul>
         </div>
@@ -214,18 +220,21 @@ export default function Home() {
           <p className="animate-text-hc">
             <span className="animated-word">광고를</span> <span className="animated-word">보고</span> <span className="animated-word">리워드를</span> <span className="animated-word">받는,</span> <span className="animated-word">즐거운</span> <span className="animated-word">경험</span>
           </p>
+          <p className="animate-text-hc platform-description">
+            <span className="animated-word">광고</span> <span className="animated-word">참여에</span> <span className="animated-word">대한</span> <span className="animated-word">즉각적인</span> <span className="animated-word">보상을</span> <span className="animated-word">제공하여</span> <span className="animated-word">사용자</span> <span className="animated-word">유입과</span> <span className="animated-word">재방문을</span> <span className="animated-word">유도합니다.</span> <span className="animated-word">게이미피케이션</span> <span className="animated-word">요소를</span> <span className="animated-word">통해</span> <span className="animated-word">광고를</span> <span className="animated-word">능동적인</span> <span className="animated-word">활동으로</span> <span className="animated-word">전환하고,</span> <span className="animated-word">사용자</span> <span className="animated-word">로열티를</span> <span className="animated-word">구축합니다.</span>
+          </p>
           <ul>
             <li><span className="animate-text-hc">
-              <span className="animated-word">-</span> <span className="animated-word">포인트</span> <span className="animated-word">적립</span> <span className="animated-word">시스템</span>
+              <span className="animated-word">-</span> <span className="animated-word">포인트</span> <span className="animated-word">적립</span> <span className="animated-word">시스템:</span> <span className="animated-word">광고</span> <span className="animated-word">참여</span> <span className="animated-word">시</span> <span className="animated-word">포인트</span> <span className="animated-word">획득,</span> <span className="animated-word">쿠폰</span> <span className="animated-word">및</span> <span className="animated-word">상품으로</span> <span className="animated-word">교환</span> <span className="animated-word">가능</span>
             </span></li>
             <li><span className="animate-text-hc">
-              <span className="animated-word">-</span> <span className="animated-word">게임형</span> <span className="animated-word">미션</span>
+              <span className="animated-word">-</span> <span className="animated-word">게임형</span> <span className="animated-word">미션:</span> <span className="animated-word">일일</span> <span className="animated-word">챌린지,</span> <span className="animated-word">주간</span> <span className="animated-word">퀘스트</span> <span className="animated-word">등</span> <span className="animated-word">다양한</span> <span className="animated-word">참여</span> <span className="animated-word">미션</span>
             </span></li>
             <li><span className="animate-text-hc">
-              <span className="animated-word">-</span> <span className="animated-word">소셜</span> <span className="animated-word">공유</span> <span className="animated-word">기능</span>
+              <span className="animated-word">-</span> <span className="animated-word">소셜</span> <span className="animated-word">공유</span> <span className="animated-word">기능:</span> <span className="animated-word">친구</span> <span className="animated-word">초대</span> <span className="animated-word">및</span> <span className="animated-word">순위</span> <span className="animated-word">경쟁을</span> <span className="animated-word">통한</span> <span className="animated-word">바이럴</span> <span className="animated-word">효과</span>
             </span></li>
             <li><span className="animate-text-hc">
-              <span className="animated-word">-</span> <span className="animated-word">개인화된</span> <span className="animated-word">추천</span>
+              <span className="animated-word">-</span> <span className="animated-word">개인화된</span> <span className="animated-word">추천:</span> <span className="animated-word">AI</span> <span className="animated-word">기반</span> <span className="animated-word">사용자</span> <span className="animated-word">관심사</span> <span className="animated-word">분석으로</span> <span className="animated-word">맞춤형</span> <span className="animated-word">광고</span> <span className="animated-word">제공</span>
             </span></li>
           </ul>
         </div>
@@ -238,18 +247,21 @@ export default function Home() {
           <p className="animate-text-hc">
             <span className="animated-word">누구나</span> <span className="animated-word">쉽게</span> <span className="animated-word">만드는</span> <span className="animated-word">인터랙티브</span> <span className="animated-word">광고</span>
           </p>
+          <p className="animate-text-hc platform-description">
+            <span className="animated-word">개발</span> <span className="animated-word">지식</span> <span className="animated-word">없이도</span> <span className="animated-word">누구나</span> <span className="animated-word">전문가</span> <span className="animated-word">수준의</span> <span className="animated-word">인터랙티브</span> <span className="animated-word">광고를</span> <span className="animated-word">제작할</span> <span className="animated-word">수</span> <span className="animated-word">있는</span> <span className="animated-word">도구를</span> <span className="animated-word">제공합니다.</span> <span className="animated-word">크리에이터와</span> <span className="animated-word">마케터가</span> <span className="animated-word">아이디어를</span> <span className="animated-word">빠르게</span> <span className="animated-word">실행하고,</span> <span className="animated-word">데이터</span> <span className="animated-word">기반으로</span> <span className="animated-word">최적화할</span> <span className="animated-word">수</span> <span className="animated-word">있습니다.</span>
+          </p>
           <ul>
             <li><span className="animate-text-hc">
-              <span className="animated-word">-</span> <span className="animated-word">노코드</span> <span className="animated-word">광고</span> <span className="animated-word">빌더</span>
+              <span className="animated-word">-</span> <span className="animated-word">노코드</span> <span className="animated-word">광고</span> <span className="animated-word">빌더:</span> <span className="animated-word">드래그</span> <span className="animated-word">&amp;</span> <span className="animated-word">드롭으로</span> <span className="animated-word">5분</span> <span className="animated-word">만에</span> <span className="animated-word">광고</span> <span className="animated-word">제작</span>
             </span></li>
             <li><span className="animate-text-hc">
-              <span className="animated-word">-</span> <span className="animated-word">템플릿</span> <span className="animated-word">라이브러리</span>
+              <span className="animated-word">-</span> <span className="animated-word">템플릿</span> <span className="animated-word">라이브러리:</span> <span className="animated-word">100+</span> <span className="animated-word">검증된</span> <span className="animated-word">게임</span> <span className="animated-word">템플릿과</span> <span className="animated-word">디자인</span> <span className="animated-word">에셋</span> <span className="animated-word">제공</span>
             </span></li>
             <li><span className="animate-text-hc">
-              <span className="animated-word">-</span> <span className="animated-word">퍼포먼스</span> <span className="animated-word">분석</span>
+              <span className="animated-word">-</span> <span className="animated-word">퍼포먼스</span> <span className="animated-word">분석:</span> <span className="animated-word">실시간</span> <span className="animated-word">성과</span> <span className="animated-word">추적과</span> <span className="animated-word">인사이트</span> <span className="animated-word">리포트</span> <span className="animated-word">자동</span> <span className="animated-word">생성</span>
             </span></li>
             <li><span className="animate-text-hc">
-              <span className="animated-word">-</span> <span className="animated-word">수익화</span> <span className="animated-word">도구</span>
+              <span className="animated-word">-</span> <span className="animated-word">수익화</span> <span className="animated-word">도구:</span> <span className="animated-word">광고</span> <span className="animated-word">수익</span> <span className="animated-word">배분</span> <span className="animated-word">시스템과</span> <span className="animated-word">크리에이터</span> <span className="animated-word">마켓플레이스</span>
             </span></li>
           </ul>
         </div>

@@ -1,13 +1,350 @@
 /* Adnori 커스텀 스타일 */
 
-/* 한글 폰트 지원 */
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+/* 테크 모노스페이스 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css');
 
 body, html {
-    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, "Chivo Mono", monospace, sans-serif;
+    font-family: "JetBrains Mono", "NanumSquare", "Chivo Mono", monospace, sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.02em;
 }
 
 /* 세로 텍스트 방지 */
 * {
     writing-mode: horizontal-tb !important;
+}
+
+/* 미니멀 다크 그레이 톤 테마 */
+body {
+    --pri-color: #E5E7EB; /* 밝은 그레이 텍스트 */
+    --sec-color: #0A0A0A; /* 진한 블랙 배경 */
+    --ter-color: #6B7280; /* 세컨더리 그레이 텍스트 */
+    --grid-color: rgba(75, 85, 99, 0.1);
+    --unde-color: rgba(75, 85, 99, 0.15);
+    --accent-color: #F5F5F5; /* 화이트 그레이 액센트 */
+    --accent-secondary: #9CA3AF; /* 미드 그레이 */
+    --accent-tertiary: #4B5563; /* 다크 그레이 */
+    position: relative;
+    overflow-x: hidden;
+    background: #0A0A0A;
+}
+
+/* 심플한 그라디언트 배경 */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.02) 0%, transparent 50%),
+        linear-gradient(180deg, #0A0A0A 0%, #121212 50%, #0A0A0A 100%);
+    z-index: -2;
+}
+
+/* 그리드 라인 색상 조정 */
+#bck > .grid-item {
+    border-color: var(--grid-color);
+}
+
+/* 타이틀 - 미니멀 화이트 */
+#name, #lastname {
+    color: #F5F5F5;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    transform-style: preserve-3d;
+    font-weight: 700;
+}
+
+/* 큰 텍스트 크기 조정 - 반응형 */
+@media screen and (min-width: 769px) {
+    #lastname {
+        font-size: clamp(4rem, 10vw, 8rem) !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #lastname {
+        font-size: clamp(2.5rem, 8vw, 4rem) !important;
+    }
+}
+
+#name .letter, #lastname .letter {
+    display: inline-block;
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+#name .letter:hover, #lastname .letter:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* 섹션 타이틀 - 그레이 톤 */
+h2 {
+    color: #E5E7EB;
+    font-weight: 600;
+}
+
+/* 인트로 텍스트 */
+#intro {
+    font-weight: 300;
+    color: #9CA3AF;
+}
+
+/* #about 섹션의 .work 레이아웃 - #project와 동일하게 */
+#about > .work {
+    margin-top: 10rem;
+}
+
+#about > .work > h3,
+#about > .work > p,
+#about > .work > ul {
+    grid-column: 6/-1;
+}
+
+#about > .work > p,
+#about > .work > ul {
+    margin-top: 5rem;
+}
+
+/* h3 타이틀 - 미니멀 스타일 */
+#about > .work > h3 {
+    color: #F5F5F5;
+    position: relative;
+    padding-left: 1.5rem;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+#about > .work > h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 60%;
+    background: #F5F5F5;
+    border-radius: 1px;
+}
+
+/* 플랫폼 디스크립션 스타일 */
+#about > .work > .platform-description {
+    color: #9CA3AF;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-top: 2rem !important;
+    padding: 1.5rem;
+    background: rgba(75, 85, 99, 0.05);
+    border-left: 2px solid #6B7280;
+    border-radius: 4px;
+}
+
+/* 리스트 아이템 - 미니멀 스타일 */
+#about > .work > ul > li {
+    transition: all 0.3s ease;
+    padding-left: 0;
+    position: relative;
+    color: #9CA3AF;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+#about > .work > ul > li:hover {
+    color: #E5E7EB;
+}
+
+/* Success Stories - 수직 정렬로 변경 */
+#sideProject .spa,
+#sideProject .spb,
+#sideProject .spc {
+    grid-column: 6 / -1 !important;
+    margin-top: 0 !important;
+}
+
+#sideProject .spb,
+#sideProject .spc {
+    margin-top: 5rem !important;
+}
+
+#sideProject .sp {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+#sideProject .sp:hover {
+    transform: translateX(5px);
+}
+
+#sideProject .sp h5 {
+    color: #F5F5F5;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+#sideProject .sp p {
+    color: #9CA3AF;
+    font-weight: 300;
+}
+
+#sideProject .sp .secondary {
+    color: #6B7280;
+}
+
+/* 이메일 섹션 강조 */
+#email {
+    background: linear-gradient(135deg, #F5F5F5 0%, #9CA3AF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+/* 링크 호버 효과 개선 */
+a:hover > span {
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+}
+
+/* 네비게이션 배경 블러 개선 */
+#nav {
+    background: rgba(15, 23, 42, 0.8);
+}
+
+/* 푸터 스타일 개선 */
+#footer {
+    background: rgba(15, 23, 42, 0.5);
+}
+
+/* 스크롤 다운 인디케이터 애니메이션 */
+.indic {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* 로딩 상태 애니메이션 준비 */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* 슬라이드 인 애니메이션 준비 */
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.slide-in-up {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+/* 마우스 인터랙티브 그라디언트 효과 - 미니멀 그레이 */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background:
+        radial-gradient(
+            800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+            rgba(245, 245, 245, 0.05),
+            rgba(156, 163, 175, 0.03) 30%,
+            transparent 60%
+        );
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+/* 플로팅 파티클 배경 */
+.floating-particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.floating-particles .particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: rgba(245, 245, 245, 0.3);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(245, 245, 245, 0.4);
+}
+
+/* 스크롤 프로그레스 바 */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #F5F5F5 0%, #9CA3AF 50%, #6B7280 100%);
+    z-index: 9999;
+    transition: width 0.1s ease;
+}
+
+/* 파티클 효과를 위한 준비 */
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0;
+}
+
+/* 글로우 효과 */
+.glow {
+    text-shadow: 0 0 10px rgba(245, 245, 245, 0.5),
+                 0 0 20px rgba(245, 245, 245, 0.3),
+                 0 0 30px rgba(245, 245, 245, 0.2);
+}
+
+/* 반응형 - 모바일에서는 애니메이션 간소화 */
+@media screen and (max-width: 768px) {
+    body::after {
+        display: none;
+    }
+
+    #sideProject .sp:hover {
+        transform: translateY(-4px);
+    }
+
+    .glow {
+        text-shadow: none;
+    }
 }

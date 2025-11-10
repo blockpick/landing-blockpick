@@ -36,7 +36,7 @@ a.hovered > span::before, #email.hovered::before { border-bottom: 2px solid var(
 .container { margin: 0px auto; width: 80%; }
 #noise { pointer-events: none; }
 #noise::before { content: ""; opacity: 0.4; position: absolute; top: 0px; left: 0px; height: 100%; width: 100%; z-index: 999; pointer-events: none; }
-@-webkit-keyframes noise { 
+@-webkit-keyframes noise {
   0%, 100% { background-position: 0px 0px; }
   10% { background-position: -5% -10%; }
   20% { background-position: -15% 5%; }
@@ -48,7 +48,7 @@ a.hovered > span::before, #email.hovered::before { border-bottom: 2px solid var(
   80% { background-position: 25% 35%; }
   90% { background-position: -10% 10%; }
 }
-@keyframes noise { 
+@keyframes noise {
   0%, 100% { background-position: 0px 0px; }
   10% { background-position: -5% -10%; }
   20% { background-position: -15% 5%; }
