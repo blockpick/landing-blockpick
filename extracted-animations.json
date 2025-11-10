@@ -1,0 +1,129 @@
+{
+  "keyframes": [
+    {
+      "name": "noise",
+      "rules": [
+        {
+          "keyText": "0%, 100%",
+          "style": "background-position: 0px 0px;"
+        },
+        {
+          "keyText": "10%",
+          "style": "background-position: -5% -10%;"
+        },
+        {
+          "keyText": "20%",
+          "style": "background-position: -15% 5%;"
+        },
+        {
+          "keyText": "30%",
+          "style": "background-position: 7% -25%;"
+        },
+        {
+          "keyText": "40%",
+          "style": "background-position: 20% 25%;"
+        },
+        {
+          "keyText": "50%",
+          "style": "background-position: -25% 10%;"
+        },
+        {
+          "keyText": "60%",
+          "style": "background-position: 15% 5%;"
+        },
+        {
+          "keyText": "70%",
+          "style": "background-position: 0px 15%;"
+        },
+        {
+          "keyText": "80%",
+          "style": "background-position: 25% 35%;"
+        },
+        {
+          "keyText": "90%",
+          "style": "background-position: -10% 10%;"
+        }
+      ]
+    },
+    {
+      "name": "noise",
+      "rules": [
+        {
+          "keyText": "0%, 100%",
+          "style": "background-position: 0px 0px;"
+        },
+        {
+          "keyText": "10%",
+          "style": "background-position: -5% -10%;"
+        },
+        {
+          "keyText": "20%",
+          "style": "background-position: -15% 5%;"
+        },
+        {
+          "keyText": "30%",
+          "style": "background-position: 7% -25%;"
+        },
+        {
+          "keyText": "40%",
+          "style": "background-position: 20% 25%;"
+        },
+        {
+          "keyText": "50%",
+          "style": "background-position: -25% 10%;"
+        },
+        {
+          "keyText": "60%",
+          "style": "background-position: 15% 5%;"
+        },
+        {
+          "keyText": "70%",
+          "style": "background-position: 0px 15%;"
+        },
+        {
+          "keyText": "80%",
+          "style": "background-position: 25% 35%;"
+        },
+        {
+          "keyText": "90%",
+          "style": "background-position: -10% 10%;"
+        }
+      ]
+    }
+  ],
+  "animations": [],
+  "transitions": [
+    {
+      "selector": "body",
+      "transition": "color 0.5s, background-color 0.5s"
+    },
+    {
+      "selector": "a > span::before",
+      "transition": "0.3s"
+    },
+    {
+      "selector": ".text-footer > a > span::before, nav a > span::before",
+      "transition": "0.3s"
+    },
+    {
+      "selector": "#email::before",
+      "transition": "0.3s"
+    },
+    {
+      "selector": ".underlined.pm::before",
+      "transition": "width 0.03s"
+    },
+    {
+      "selector": ".underlined.dev::before",
+      "transition": "width 0.03s"
+    },
+    {
+      "selector": ".underlined::before",
+      "transition": "width 0.03s"
+    },
+    {
+      "selector": "#cursor-circle",
+      "transition": "width 0.3s, height 0.3s, border-color 0.3s"
+    }
+  ]
+}

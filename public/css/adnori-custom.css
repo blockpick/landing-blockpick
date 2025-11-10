@@ -1,0 +1,13 @@
+/* Adnori 커스텀 스타일 */
+
+/* 한글 폰트 지원 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body, html {
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, "Chivo Mono", monospace, sans-serif;
+}
+
+/* 세로 텍스트 방지 */
+* {
+    writing-mode: horizontal-tb !important;
+}
