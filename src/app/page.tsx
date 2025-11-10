@@ -63,13 +63,13 @@ export default function Home() {
       <div id="nav">
         <div className="grid-container">
           <p className="version easter-pointer" id="colors">2025</p>
-          <p className="ava">광고와 재미의 만남</p>
-          <p className="pos">글로벌 소프트웨어 플랫폼</p>
+          <p className="ava">Where Ads Meet Play</p>
+          <p className="pos">Global Software Platform</p>
           <nav>
             <p>
-              <a href="#project"><span>솔루션,</span></a>
-              <a href="#about"><span>회사소개,</span></a>
-              <a href="#contact"><span>문의하기</span></a>
+              <a href="#project"><span>Solutions,</span></a>
+              <a href="#about"><span>About,</span></a>
+              <a href="#contact"><span>Contact</span></a>
             </p>
           </nav>
         </div>
@@ -81,9 +81,9 @@ export default function Home() {
           <p id="version-s"><span>2025</span></p>
           <nav>
             <h2>
-              <a className="link-s" href="#project"><span>솔루션,</span></a>
-              <a className="link-s" href="#about"><span>회사소개,</span></a>
-              <a className="link-s" href="#contact"><span>문의하기</span></a>
+              <a className="link-s" href="#project"><span>Solutions,</span></a>
+              <a className="link-s" href="#about"><span>About,</span></a>
+              <a className="link-s" href="#contact"><span>Contact</span></a>
             </h2>
           </nav>
         </div>
@@ -105,26 +105,39 @@ export default function Home() {
             <span className="letter">i</span>
           </h2>
           <h2 id="lastname" className="bouteiller urbanist">
-            <span className="letter">광</span>
-            <span className="letter">고</span>
-            <span className="letter">와</span>
+            <span className="letter">W</span>
+            <span className="letter">h</span>
+            <span className="letter">e</span>
+            <span className="letter">r</span>
+            <span className="letter">e</span>
             <span className="letter"> </span>
-            <span className="letter">놀</span>
-            <span className="letter">이</span>
-            <span className="letter">의</span>
+            <span className="letter">A</span>
+            <span className="letter">d</span>
+            <span className="letter">s</span>
             <span className="letter"> </span>
-            <span className="letter">만</span>
-            <span className="letter">남</span>
+            <span className="letter">M</span>
+            <span className="letter">e</span>
+            <span className="letter">e</span>
+            <span className="letter">t</span>
+            <span className="letter"> </span>
+            <span className="letter">P</span>
+            <span className="letter">l</span>
+            <span className="letter">a</span>
+            <span className="letter">y</span>
           </h2>
           <h5 id="intro" className="animate-text">
-            <span className="letter">광고를</span>{' '}
-            <span className="letter underlined easterEgg pm easter-pointer" emoji="🎮">게임처럼,</span>{' '}
-            <span className="letter">마케팅을</span>{' '}
-            <span className="letter underlined easterEgg inno easter-pointer" emoji="✨">즐거움으로</span>{' '}
-            <span className="letter">변화시키는</span>{' '}
-            <span className="letter underlined easterEgg tech easter-pointer" emoji="🚀">혁신적인</span>{' '}
-            <span className="letter">소프트웨어</span>{' '}
-            <span className="letter underlined easterEgg design easter-pointer" emoji="💡">플랫폼</span>
+            <span className="letter">Transform</span>{' '}
+            <span className="letter">advertising</span>{' '}
+            <span className="letter">into</span>{' '}
+            <span className="letter underlined easterEgg pm easter-pointer" emoji="🎮">gameplay,</span>{' '}
+            <span className="letter">marketing</span>{' '}
+            <span className="letter">into</span>{' '}
+            <span className="letter underlined easterEgg inno easter-pointer" emoji="✨">joy</span>{' '}
+            <span className="letter">with</span>{' '}
+            <span className="letter">our</span>{' '}
+            <span className="letter underlined easterEgg tech easter-pointer" emoji="🚀">innovative</span>{' '}
+            <span className="letter">software</span>{' '}
+            <span className="letter underlined easterEgg design easter-pointer" emoji="💡">platform</span>
           </h5>
         </div>
 
@@ -157,13 +170,13 @@ export default function Home() {
         </div>
         <div className="grid-container work">
           <p className="animate-text-hc">
-            <span className="animated-word">광고는</span> <span className="animated-word">더</span> <span className="animated-word">이상</span> <span className="animated-word">방해가</span> <span className="animated-word">아닙니다.</span>
+            <span className="animated-word">Ads</span> <span className="animated-word">are</span> <span className="animated-word">no</span> <span className="animated-word">longer</span> <span className="animated-word">interruptions.</span>
           </p>
           <p className="animate-text-hc">
-            <span className="animated-word">&quot;Nori(놀이)&quot;는</span> <span className="animated-word">한국어로</span> <span className="animated-word">&apos;재미있는</span> <span className="animated-word">활동&apos;을</span> <span className="animated-word">의미합니다.</span> <span className="animated-word">우리는</span> <span className="animated-word">광고(Ad)와</span> <span className="animated-word">놀이(Nori)를</span> <span className="animated-word">결합하여,</span> <span className="animated-word">사용자들이</span> <span className="animated-word">광고를</span> <span className="animated-word">즐기고</span> <span className="animated-word">참여하는</span> <span className="animated-word">새로운</span> <span className="animated-word">경험을</span> <span className="animated-word">만듭니다.</span>
+            <span className="animated-word">&quot;Nori&quot;</span> <span className="animated-word">means</span> <span className="animated-word">&apos;playful</span> <span className="animated-word">activity&apos;</span> <span className="animated-word">in</span> <span className="animated-word">Korean.</span> <span className="animated-word">We</span> <span className="animated-word">combine</span> <span className="animated-word">Ad</span> <span className="animated-word">and</span> <span className="animated-word">Nori</span> <span className="animated-word">to</span> <span className="animated-word">create</span> <span className="animated-word">a</span> <span className="animated-word">new</span> <span className="animated-word">experience</span> <span className="animated-word">where</span> <span className="animated-word">users</span> <span className="animated-word">enjoy</span> <span className="animated-word">and</span> <span className="animated-word">engage</span> <span className="animated-word">with</span> <span className="animated-word">advertising.</span>
           </p>
           <p className="animate-text-hc">
-            <span className="animated-word">지루한</span> <span className="animated-word">광고는</span> <span className="animated-word">이제</span> <span className="animated-word">그만.</span> <span className="animated-word">Adnori와</span> <span className="animated-word">함께</span> <span className="animated-word">광고를</span> <span className="animated-word">놀이로</span> <span className="animated-word">바꾸세요.</span>
+            <span className="animated-word">No</span> <span className="animated-word">more</span> <span className="animated-word">boring</span> <span className="animated-word">ads.</span> <span className="animated-word">Transform</span> <span className="animated-word">advertising</span> <span className="animated-word">into</span> <span className="animated-word">play</span> <span className="animated-word">with</span> <span className="animated-word">Adnori.</span>
           </p>
         </div>
       </div>
@@ -187,27 +200,27 @@ export default function Home() {
         <div className="grid-container work">
           <h3>
             <span className="animate-text-hc">
-              <span className="animated-word">#1</span> <span className="animated-word">인터랙티브</span> <span className="animated-word">광고</span> <span className="animated-word">플랫폼</span>
+              <span className="animated-word">#1</span> <span className="animated-word">Interactive</span> <span className="animated-word">Advertising</span> <span className="animated-word">Platform</span>
             </span>
           </h3>
           <p className="animate-text-hc">
-            <span className="animated-word">클릭률을</span> <span className="animated-word">10배</span> <span className="animated-word">높이는</span> <span className="animated-word">게임화된</span> <span className="animated-word">광고</span> <span className="animated-word">솔루션</span>
+            <span className="animated-word">Gamified</span> <span className="animated-word">ad</span> <span className="animated-word">solution</span> <span className="animated-word">that</span> <span className="animated-word">boosts</span> <span className="animated-word">click-through</span> <span className="animated-word">rates</span> <span className="animated-word">by</span> <span className="animated-word">10x</span>
           </p>
           <p className="animate-text-hc platform-description">
-            <span className="animated-word">사용자가</span> <span className="animated-word">직접</span> <span className="animated-word">참여하는</span> <span className="animated-word">미니게임</span> <span className="animated-word">형태의</span> <span className="animated-word">광고를</span> <span className="animated-word">통해</span> <span className="animated-word">브랜드</span> <span className="animated-word">인게이지먼트를</span> <span className="animated-word">극대화합니다.</span> <span className="animated-word">단순한</span> <span className="animated-word">배너가</span> <span className="animated-word">아닌,</span> <span className="animated-word">몰입형</span> <span className="animated-word">경험을</span> <span className="animated-word">제공하여</span> <span className="animated-word">광고</span> <span className="animated-word">피로도를</span> <span className="animated-word">줄이고</span> <span className="animated-word">전환율을</span> <span className="animated-word">향상시킵니다.</span>
+            <span className="animated-word">Maximize</span> <span className="animated-word">brand</span> <span className="animated-word">engagement</span> <span className="animated-word">through</span> <span className="animated-word">mini-game</span> <span className="animated-word">based</span> <span className="animated-word">ads</span> <span className="animated-word">that</span> <span className="animated-word">users</span> <span className="animated-word">actively</span> <span className="animated-word">participate</span> <span className="animated-word">in.</span> <span className="animated-word">Provide</span> <span className="animated-word">immersive</span> <span className="animated-word">experiences</span> <span className="animated-word">instead</span> <span className="animated-word">of</span> <span className="animated-word">simple</span> <span className="animated-word">banners,</span> <span className="animated-word">reducing</span> <span className="animated-word">ad</span> <span className="animated-word">fatigue</span> <span className="animated-word">and</span> <span className="animated-word">improving</span> <span className="animated-word">conversion</span> <span className="animated-word">rates.</span>
           </p>
           <ul>
             <li><span className="animate-text-hc">
-              <span className="animated-word">-</span> <span className="animated-word">미니게임</span> <span className="animated-word">기반</span> <span className="animated-word">광고:</span> <span className="animated-word">퍼즐,</span> <span className="animated-word">퀴즈,</span> <span className="animated-word">룰렛</span> <span className="animated-word">등</span> <span className="animated-word">다양한</span> <span className="animated-word">게임</span> <span className="animated-word">템플릿</span>
+              <span className="animated-word">-</span> <span className="animated-word">Mini-game</span> <span className="animated-word">based</span> <span className="animated-word">ads:</span> <span className="animated-word">Various</span> <span className="animated-word">game</span> <span className="animated-word">templates</span> <span className="animated-word">including</span> <span className="animated-word">puzzles,</span> <span className="animated-word">quizzes,</span> <span className="animated-word">and</span> <span className="animated-word">roulettes</span>
             </span></li>
             <li><span className="animate-text-hc">
-              <span className="animated-word">-</span> <span className="animated-word">실시간</span> <span className="animated-word">참여</span> <span className="animated-word">분석:</span> <span className="animated-word">클릭률,</span> <span className="animated-word">참여</span> <span className="animated-word">시간,</span> <span className="animated-word">전환율</span> <span className="animated-word">데이터</span> <span className="animated-word">실시간</span> <span className="animated-word">추적</span>
+              <span className="animated-word">-</span> <span className="animated-word">Real-time</span> <span className="animated-word">engagement</span> <span className="animated-word">analytics:</span> <span className="animated-word">Track</span> <span className="animated-word">CTR,</span> <span className="animated-word">engagement</span> <span className="animated-word">time,</span> <span className="animated-word">and</span> <span className="animated-word">conversion</span> <span className="animated-word">data</span> <span className="animated-word">in</span> <span className="animated-word">real-time</span>
             </span></li>
             <li><span className="animate-text-hc">
-              <span className="animated-word">-</span> <span className="animated-word">A/B</span> <span className="animated-word">테스트</span> <span className="animated-word">자동화:</span> <span className="animated-word">다양한</span> <span className="animated-word">게임</span> <span className="animated-word">형식을</span> <span className="animated-word">자동으로</span> <span className="animated-word">테스트하고</span> <span className="animated-word">최적화</span>
+              <span className="animated-word">-</span> <span className="animated-word">Automated</span> <span className="animated-word">A/B</span> <span className="animated-word">testing:</span> <span className="animated-word">Automatically</span> <span className="animated-word">test</span> <span className="animated-word">and</span> <span className="animated-word">optimize</span> <span className="animated-word">various</span> <span className="animated-word">game</span> <span className="animated-word">formats</span>
             </span></li>
             <li><span className="animate-text-hc">
-              <span className="animated-word">-</span> <span className="animated-word">ROI</span> <span className="animated-word">대시보드:</span> <span className="animated-word">캠페인</span> <span className="animated-word">성과를</span> <span className="animated-word">한눈에</span> <span className="animated-word">확인하는</span> <span className="animated-word">직관적인</span> <span className="animated-word">인터페이스</span>
+              <span className="animated-word">-</span> <span className="animated-word">ROI</span> <span className="animated-word">dashboard:</span> <span className="animated-word">Intuitive</span> <span className="animated-word">interface</span> <span className="animated-word">to</span> <span className="animated-word">view</span> <span className="animated-word">campaign</span> <span className="animated-word">performance</span> <span className="animated-word">at</span> <span className="animated-word">a</span> <span className="animated-word">glance</span>
             </span></li>
           </ul>
         </div>
