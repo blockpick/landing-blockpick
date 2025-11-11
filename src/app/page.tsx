@@ -156,7 +156,7 @@ export default function Home() {
         </div>
 
         <div className="grid-container" id="bottom">
-          <p className="indic">scr<br />olld<br />own</p>
+          <p className="indic">scroll down</p>
           <p className="social">
             <span>
               <a href="#" onClick={handleSnsClick}><span>Linkedin,</span></a>
