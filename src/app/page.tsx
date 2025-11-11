@@ -46,6 +46,11 @@ export default function Home() {
     loadScripts();
   }, []);
 
+  const handleSnsClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    alert('Coming soon');
+  };
+
   return (
     <>
       {/* scroll progress bar */}
@@ -154,9 +159,9 @@ export default function Home() {
           <p className="indic">scr<br />olld<br />own</p>
           <p className="social">
             <span>
-              <a href="https://www.linkedin.com/company/adnori" target="_blank" rel="noreferrer"><span>Linkedin,</span></a>
-              <a href="https://twitter.com/adnori" target="_blank" rel="noreferrer"><span>Twitter,</span></a>
-              <a href="https://github.com/adnori" target="_blank" rel="noreferrer"><span>Github</span></a>
+              <a href="#" onClick={handleSnsClick}><span>Linkedin,</span></a>
+              <a href="#" onClick={handleSnsClick}><span>Twitter,</span></a>
+              <a href="#" onClick={handleSnsClick}><span>Github</span></a>
             </span>
           </p>
         </div>
@@ -424,12 +429,12 @@ export default function Home() {
           <div id="grid-footer">
             <div>
               <p className="text-footer">
-                <a href="https://www.linkedin.com/company/adnori" target="_blank" rel="noreferrer"><span>Linkedin,</span></a>
-                <a href="https://twitter.com/adnori" target="_blank" rel="noreferrer"><span>Twitter,</span></a>
-                <a href="https://github.com/adnori" target="_blank" rel="noreferrer"><span>Github</span></a>
+                <a href="#" onClick={handleSnsClick}><span>Linkedin,</span></a>
+                <a href="#" onClick={handleSnsClick}><span>Twitter,</span></a>
+                <a href="#" onClick={handleSnsClick}><span>Github</span></a>
               </p>
             </div>
-            <div><p className="text-footer">© 2024 Adnori. All rights reserved.</p></div>
+            <div><p className="text-footer">© 2025 Adnori. All rights reserved.</p></div>
             <div><p className="text-footer">Made with ❤️ and 🎮 in Seoul</p></div>
           </div>
         </div>

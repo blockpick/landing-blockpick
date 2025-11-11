@@ -10,11 +10,11 @@ html {
 /**/
 
 body {
-    --pri-color: #000000; /* text */
-    --sec-color: #E1DFDD; /* background */
-    --ter-color: #787878; /* secondary text */
-    --grid-color: rgba(0, 0, 0, 0.1);
-    --unde-color: rgba(0, 0, 0, 0.15);
+    --pri-color: #2C2420; /* text - 다크 브라운 */
+    --sec-color: #F5F1ED; /* background - 따뜻한 베이지 */
+    --ter-color: #8B7D71; /* secondary text - 연한 브라운 */
+    --grid-color: rgba(44, 36, 32, 0.08);
+    --unde-color: rgba(44, 36, 32, 0.12);
     --blur-value: 10px;
     --mouse-color: var(--pri-color);
 }

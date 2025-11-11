@@ -428,6 +428,91 @@ function createClickExplosion(x, y) {
   }
 }
 
+// 타이핑 효과 (터미널 스타일)
+function typingEffect(element) {
+  const original = element.textContent;
+  element.textContent = '';
+  element.style.borderRight = '2px solid rgba(44, 36, 32, 0.6)';
+
+  let index = 0;
+  const interval = setInterval(() => {
+    element.textContent = original.slice(0, index);
+    index++;
+
+    if (index > original.length) {
+      clearInterval(interval);
+      setTimeout(() => {
+        element.style.borderRight = 'none';
+      }, 500);
+    }
+  }, 50);
+}
+
+// 홀로그램 스캔 효과
+function hologramScan(element) {
+  // 스캔 라인 생성
+  const scanLine = document.createElement('div');
+  scanLine.style.position = 'absolute';
+  scanLine.style.left = '0';
+  scanLine.style.width = '100%';
+  scanLine.style.height = '2px';
+  scanLine.style.background = 'linear-gradient(90deg, transparent, rgba(139, 125, 113, 0.8), transparent)';
+  scanLine.style.pointerEvents = 'none';
+  scanLine.style.zIndex = '10';
+
+  element.style.position = 'relative';
+  element.appendChild(scanLine);
+
+  // 스캔 애니메이션
+  gsap.fromTo(scanLine,
+    { top: '0%', opacity: 0 },
+    {
+      top: '100%',
+      opacity: 1,
+      duration: 0.8,
+      ease: "power2.inOut",
+      onComplete: () => {
+        scanLine.remove();
+      }
+    }
+  );
+
+  // 텍스트 글로우 효과
+  gsap.to(element, {
+    textShadow: '0 0 10px rgba(139, 125, 113, 0.6), 0 0 20px rgba(139, 125, 113, 0.3)',
+    duration: 0.3,
+    yoyo: true,
+    repeat: 1,
+    ease: "power2.inOut"
+  });
+}
+
+// h3 요소에 호버 시 홀로그램 스캔 효과
+gsap.utils.toArray("#about .work h3").forEach((h3) => {
+  let isAnimating = false;
+
+  h3.addEventListener('mouseenter', () => {
+    if (!isAnimating) {
+      isAnimating = true;
+      hologramScan(h3);
+      setTimeout(() => {
+        isAnimating = false;
+      }, 1000);
+    }
+  });
+});
+
+// 섹션 타이틀에 타이핑 효과 적용 (스크롤 시)
+gsap.utils.toArray(".title h2").forEach((title) => {
+  ScrollTrigger.create({
+    trigger: title,
+    start: "top 80%",
+    once: true,
+    onEnter: () => {
+      typingEffect(title);
+    }
+  });
+});
 
 // 페이지 로드 후 초기화
 if (document.readyState === 'loading') {
