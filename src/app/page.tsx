@@ -429,7 +429,7 @@ export default function Home() {
           <div id="grid-footer">
             <div>
               <p className="text-footer">
-                +82-2-599-1408
+                <a href="tel:+82-2-599-1408">+82-2-599-1408</a>
               </p>
             </div>
             <div><p className="text-footer">© 2025 Adnori. All rights reserved.</p></div>
