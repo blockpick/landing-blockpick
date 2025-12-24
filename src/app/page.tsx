@@ -159,7 +159,7 @@ export default function Home() {
           <p className="indic">scroll down</p>
           <p className="social">
             <span>
-              <a href="#" onClick={handleSnsClick}><span>Linkedin,</span></a>
+              < a href="#" onClick={handleSnsClick}><span>Linkedin,</span></a>
               <a href="#" onClick={handleSnsClick}><span>Twitter,</span></a>
               <a href="#" onClick={handleSnsClick}><span>Github</span></a>
             </span>
@@ -429,9 +429,7 @@ export default function Home() {
           <div id="grid-footer">
             <div>
               <p className="text-footer">
-                <a href="#" onClick={handleSnsClick}><span>Linkedin,</span></a>
-                <a href="#" onClick={handleSnsClick}><span>Twitter,</span></a>
-                <a href="#" onClick={handleSnsClick}><span>Github</span></a>
+                +82-2-599-1408
               </p>
             </div>
             <div><p className="text-footer">© 2025 Adnori. All rights reserved.</p></div>
